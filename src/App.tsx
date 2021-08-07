@@ -1,7 +1,7 @@
 import React from 'react';
 import { Stack, Text, Link, FontWeights, IStackTokens, IStackStyles, ITextStyles } from '@fluentui/react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './component/Header'
 
 const boldStyle: Partial<ITextStyles> = { root: { fontWeight: FontWeights.semibold } };
 const stackTokens: IStackTokens = { childrenGap: 15 };
@@ -16,8 +16,8 @@ const stackStyles: Partial<IStackStyles> = {
 
 export const App: React.FunctionComponent = () => {
   return (
-    <Stack horizontalAlign="center" verticalAlign="center" verticalFill styles={stackStyles} tokens={stackTokens}>
-      <img className="App-logo" src={logo} alt="logo" />
+    <Stack verticalFill styles={stackStyles} tokens={stackTokens}>
+      <Header />
       <Text variant="xxLarge" styles={boldStyle}>
         Welcome to your Fluent UI app
       </Text>
