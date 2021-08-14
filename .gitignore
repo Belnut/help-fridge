@@ -25,3 +25,4 @@ yarn-error.log*
 
 #setting
 local.settings.json
+.vscode/*
